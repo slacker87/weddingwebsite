@@ -2,10 +2,10 @@ Swiftrickertwedding::Application.routes.draw do
 
 root  to: 'static_pages#home'
 
-match '/help',  to: 'static_pages#help'
-match '/date', to: 'static_pages#date'
-match '/menu', to: 'static_pages#menu'
-match '/venue', to: 'static_pages#venue'
+match '/help',  to: 'static_pages#help', via: 'get'
+match '/date', to: 'static_pages#date', via: 'get'
+match '/menu', to: 'static_pages#menu', via: 'get'
+match '/venue', to: 'static_pages#venue', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

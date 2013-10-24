@@ -1,10 +1,5 @@
 Swiftrickertwedding::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/help"
-  get "static_pages/venue"
-  get "static_pages/date"
-  get "static_pages/menu"
-  
+
 root  to: 'static_pages#home'
 
 match '/help',  to: 'static_pages#help'

@@ -1,4 +1,16 @@
 Swiftrickertwedding::Application.routes.draw do
+  get "static_pages/home"
+  get "static_pages/help"
+  get "static_pages/venue"
+  get "static_pages/date"
+  get "static_pages/menu"
+  
+root  to: 'static_pages#home'
+
+match '/help',  to: 'static_pages#help'
+match '/date', to: 'static_pages#date'
+match '/menu', to: 'static_pages#menu'
+match '/venue', to: 'static_pages#venue'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

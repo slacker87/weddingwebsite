@@ -1,6 +1,13 @@
 <% provide(:title, 'Home')%>
-<h1>Welcome to the wedding site!</h1>
-<p align="center">Soon to contain all relevent information about Mike and Maria's wedding!</p>
+<h1>About the wedding</h1>
+<div class="row">
+<div class="col-md-4 col-md-offset-4">
+<div class="list-group" align="center">
+	<h3><%= link_to "Date", date_path, class: "list-group-item" %></h3>
+	<h3><%= link_to "Menu", menu_path, class: "list-group-item" %></h3>
+	<h3><%= link_to "Venue", venue_path, class: "list-group-item" %></h3>
+</div>
+</div>
 <script language="javascript" type="text/javascript">
 
       $(function(){
@@ -8,9 +15,14 @@
         });
       });
 </script>
-
-<div align="center">   
-
+</div>
+<div class="row">
+<div class="col-md-8 col-md-offset-2">
+<div align="center" class="panel panel-default">
+<div class="panel panel-heading">
+<h3>Time remaining before the big day</h3>
+</div>
+<div class="panel panel-body">
     <div class="wrapper">
       <div class="cell">
         <div id="holder">
@@ -35,4 +47,6 @@
       </div>
     </div>
 </div>
-
+</div>
+</div>
+</div>

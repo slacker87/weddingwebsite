@@ -18,6 +18,8 @@ overflow-y: scroll;
 }
 body {
 padding-top: 60px;
+background-image:url('http://mrickert.com/wp-content/uploads/2013/10/blackswirltopleft.png');
+background-repeat:no-repeat;
 }
 section {
 overflow: auto;
@@ -54,6 +56,11 @@ font-size: 1.1em;
 line-height: 1.7em;
 }
 
+.panel {
+  background-color: #eaeaea;
+}
+
+
 
 /* fixes the navbar-inner to work with bootstrap 3 */
 
@@ -65,7 +72,9 @@ line-height: 1.7em;
     vertical-align: top;
 }
 
-
+.navbar-inverse {
+  border:0px;
+}
 
 
 .nav > li > a {
@@ -93,7 +102,7 @@ line-height: 1.7em;
 
 
 footer {
-margin-top: 45px;
+margin-top: 2px;
 padding-top: 5px;
 border-top: 1px solid $grayMediumLight;
 color: $grayLight;

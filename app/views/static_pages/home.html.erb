@@ -1,13 +1,47 @@
 <% provide(:title, 'Home')%>
 <h1>About the wedding</h1>
-<div class="row">
-<div class="col-md-4 col-md-offset-4">
-<div class="list-group" align="center">
-	<h3><%= link_to "Date", date_path, class: "list-group-item" %></h3>
-	<h3><%= link_to "Menu", menu_path, class: "list-group-item" %></h3>
-	<h3><%= link_to "Venue", venue_path, class: "list-group-item" %></h3>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+<div id="Carousel" class="carousel slide col-md-12" style="padding:0;">
+        <ol class="carousel-indicators">
+            <li data-target="Carousel" data-slide-to="0" class="active"></li>
+            <li data-target="Carousel" data-slide-to="1"></li>
+            <li data-target="Carousel" data-slide-to="2"></li>
+        </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://mrickert.com/wp-content/uploads/2013/10/blackswirlbottom11.png" alt="spongebob">
+      <div class="carousel-caption">
+        Something about the wedding
+      </div>
+    </div>
+    <div class="item">
+    <img src="http://mrickert.com/wp-content/uploads/2013/10/blackswirltopleft.png" alt="spongebob2">
+          <div class="carousel-caption">
+        Something about the wedding 2
+      </div>
+    </div>
+    <div class="item">
+    <img src="http://mrickert.com/wp-content/uploads/2013/10/spongemagic.jpg" alt="spongebob3">
+          <div class="carousel-caption">
+        Something about the wedding 3
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+        <a class="left carousel-control" href="#Carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#Carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
 </div>
-</div>
+<script type="text/javascript" language="javascript"> $('.carousel').carousel({
+  interval: 3000
+})
+</script>
 <script language="javascript" type="text/javascript">
 
       $(function(){
@@ -15,9 +49,8 @@
         });
       });
 </script>
-</div>
 <div class="row">
-<div class="col-md-8 col-md-offset-2">
+<div class="col-md-8 col-md-offset-2" style="padding-top:20px;">
 <div align="center" class="well">
 <h2 style="padding-bottom:20px;">Time remaining before the big day</h2>
     <div class="wrapper" style="border-top:solid;">

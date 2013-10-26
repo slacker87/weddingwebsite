@@ -61,6 +61,11 @@ line-height: 1.7em;
 }
 
 
+.carousel .item {
+  min-height: 300px;
+  max-height: 300px;
+}
+
 
 /* fixes the navbar-inner to work with bootstrap 3 */
 

@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  include Getimages
+  
   def home
   end
 
@@ -12,5 +14,11 @@ class StaticPagesController < ApplicationController
   end
 
   def menu
+  end
+  
+  def photos
+    @PAGE = "https://drive.google.com/folderview?id=0B68PQDtw30drdDZLSGNYd3ZlNmM"
+    @imageurl = Getimages.getimagelist(@PAGE)
+    @imageurlpreview = Getimages.getimagelistpreview(@PAGE)
   end
 end

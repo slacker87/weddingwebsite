@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require stylish-portfolio
- *= require_tree .
+ *= require custom
+ *= require media
  */
 

@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 1.2' # Build JSON APIs with ease. Read more: https://github.
 # Non-default gems
 gem 'bootstrap-sass', '~> 3.0.2.0' # Twitter Bootstrap front-end frameworks
 gem 'local_time' # Manage time
+gem 'nokogiri'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

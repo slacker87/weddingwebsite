@@ -8,7 +8,9 @@ require 'open-uri'
     @urllist = []
     doc = Nokogiri::HTML(open(url))
     doc.xpath('//img').each do |img|
-      @urllist << img['src'][0..-6]
+      if img['src'].include?("gstatic.com/docs/doclist") == false and img['src'].include?("www.google.com/images") == false
+        @urllist << img['src'].chomp('=s190')
+      end
     end
   return @urllist
   end
@@ -17,7 +19,9 @@ require 'open-uri'
     @urllistpreview = []
     doc = Nokogiri::HTML(open(url))
     doc.xpath('//img').each do |img|
-      @urllistpreview << img['src']
+      if img['src'].include?("gstatic.com/docs/doclist") == false and img['src'].include?("www.google.com/images") == false
+        @urllistpreview << img['src']
+      end
     end
     return @urllistpreview
   end

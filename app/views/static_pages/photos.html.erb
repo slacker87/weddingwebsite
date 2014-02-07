@@ -7,13 +7,10 @@
 <div id="thumbsWrapper">
     <div id="content" >
       <% if @imageurl != nil and @imageurl != 0 %>
-        <% @mycount = 0 %>
-        <% @imageurl.each do |x| %>
-            <% if @mycount % 2 == 0 %>
-              <img src="<%= x %>" alt="<%= x %>"/>
-           <% end %>
-           <% @mycount += 1 %>
-      <% end %>
+        <% @imageurl.zip(@imageurlpreview).each do |x,y| %>
+      <% puts "#{x} and #{y}" %>
+          <img src="<%= y %>" alt="<%= x %>"/>
+        <% end %>
       <% else %>
       <h1> Something bad happened </h1>
       <% end %>
@@ -22,9 +19,10 @@
 </div>
 <div id="panel">
     <div id="wrapper">
+    </div>
         <a id="prev"></a>
         <a id="next"></a>
-    </div>
+      <a id="close">Close</a>
 </div>
 
 <script>
@@ -90,12 +88,13 @@
                 it's stored in the title attribute of the thumb;
                 show it if it's not empty
                  */
+                $('#close').fadeIn();
                 var title = $this.attr('title');
                 if(title != '')
                     $('#description').html(title).show();
                 else
                     $('#description').empty().hide();
- 
+               
                 /*
                 if our picture is the first one,
                 don't show the "previous button"
@@ -128,24 +127,20 @@
     and reset the panel (like it was initially);
     this includes removing the large image element
      */
-    $('#wrapper > img').live('click',function(){
-        $this = $(this);
-        $('#description').empty().hide();
+    $('#wrapper').bind('click',function(){
+      $('#description').hide();
+      $('#wrapper img').stop().fadeOut(500,function(){
+            var $theImage = $(this);
+                var $this = $(this);
  
-        $('#thumbsWrapper').css('z-index','10')
-        .stop()
-        .animate({'height':'100%'},speed,function(){
-            var $theWrapper = $(this);
-            $('#panel').css('height','0px');
-            $theWrapper.css('z-index','0');
-            /*
-            remove the large image element
-            and the navigation buttons
-             */
-            $this.remove();
-            $('#prev').hide();
-            $('#next').hide();
-        });
+                $this.remove();
+                resize($theImage);
+                     $('#prev').hide();
+                            $('#next').hide();
+                            $('#close').hide();
+        $('#panel').css('height','0%');
+        $('#thumbsWrapper').css('height','100%');
+            });
     });
  
     /*
@@ -166,6 +161,23 @@
         navigate($previmage,'left');
     });
  
+    $('#close').bind('click', function(){
+      $('#wrapper > img').click(); /* simulates click on large photo */
+      $('#wrapper img').stop().fadeOut(500,function(){
+            var $theImage = $(this);
+                var $this = $(this);
+ 
+                $this.remove();
+                resize($theImage);
+                     $('#prev').hide();
+                            $('#next').hide();
+                            $('#close').hide();
+        $('#description').hide();
+        $('#panel').css('height','0%');
+        $('#thumbsWrapper').css('height','100%');
+            });
+    });
+    
     /*
     given the next or previous image to show,
     and the direction, it loads a new image in the panel.

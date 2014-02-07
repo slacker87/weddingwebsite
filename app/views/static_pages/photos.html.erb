@@ -1,5 +1,6 @@
 <% provide(:title, 'Photos')%>
     <%= stylesheet_link_tag "photowall"%>
+
 <div class="infobar">
     <span id="description"></span>
     <span id="loading">Loading Image</span>
@@ -17,6 +18,7 @@
         <div class="placeholder"></div>
     </div>
 </div>
+<%= link_to "Back", root_path, class: "backfromphotos" %>
 <div id="panel">
     <div id="wrapper">
     </div>
@@ -58,7 +60,7 @@
         $this.stop().animate({'opacity':'1.0'},200);
     },function () {
         var $this   = $(this);
-        $this.stop().animate({'opacity':'0.4'},200);
+        $this.stop().animate({'opacity':'0.7'},200);
     }).bind('click',function(){
         var $this   = $(this);
  

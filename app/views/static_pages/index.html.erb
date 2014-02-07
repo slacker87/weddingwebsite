@@ -48,7 +48,7 @@
 <!-- /Full Page Image Header Area -->
 
 <!-- date -->
-<div id="date" class="intro">
+<div id="date" class="intro fademe">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
@@ -61,7 +61,7 @@
 <!-- /date -->
 
 <!-- Attire -->
-<div id="attire" class="services">
+<div id="attire" class="services fademe">
   <h1 align="center">Attire</h1>
   <div class="container">
     <div class="row">
@@ -135,7 +135,7 @@
 
 
 <!-- Photos -->
-<div id="photos" class="callout">
+<div id="photos" class="callout fademe">
         <div class="vert-text">
         <h1>Wedding Photos</h1>
           <br>
@@ -147,7 +147,7 @@
 
 
 <!-- venue -->
-<div id="venue" class="call-to-action">
+<div id="venue" class="call-to-action fademe">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
@@ -158,7 +158,7 @@
   </div>
 </div>
     <!-- Map -->
-    <div class="map">
+    <div class="map fademe">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?ie=UTF8&amp;q=nassau+inn+princeton&amp;fb=1&amp;gl=us&amp;hq=nassau+inn&amp;cid=0,0,16635396667706573177&amp;ll=40.350396,-74.661281&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed">
         <br />
         <small>
@@ -228,4 +228,28 @@
         $(".digits").countdown({
         });
       });
+</script>
+
+<!-- script for fancy fade in/out -->
+<script>
+   $(window).scroll(function () {
+
+        /* Check the location of each desired element */
+        $('.fademe').each(function (i) {
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if (bottom_of_window > bottom_of_object - 200) {
+
+                $(this).animate({
+                    'opacity': '1'
+                }, 700);
+            }
+
+        });
+
+    });
+  
 </script>

@@ -1,7 +1,7 @@
 module StaticPagesHelper
   
    def full_title(page_title)
-    base_title = "The Wedding of Maria Swift and Michael Rickert"
+     base_title = "Wedding"
     if page_title.empty?
       base_title
     else

@@ -61,7 +61,7 @@
 <!-- /date -->
 
 <!-- Attire -->
-<div id="attire" class="services fademe">
+<div id="attire" class="services fademe1">
   <h1 align="center">Attire</h1>
   <div class="container">
     <div class="row">
@@ -241,15 +241,27 @@
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
             /* If the object is completely visible in the window, fade it it */
-            if (bottom_of_window > bottom_of_object - 200) {
+            if (bottom_of_window > bottom_of_object) {
 
                 $(this).animate({
                     'opacity': '1'
                 }, 700);
             }
-
         });
+        /* Check the location of each desired element */
+        $('.fademe1').each(function (i) {
 
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if (bottom_of_window > bottom_of_object * .5) {
+
+                $(this).animate({
+                    'opacity': '1'
+                }, 700);
+            }
+        });
     });
   
 </script>

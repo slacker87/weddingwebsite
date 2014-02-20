@@ -7,14 +7,9 @@
 </div>
 <div id="thumbsWrapper">
     <div id="content" >
-      <% if @imageurl != nil and @imageurl != 0 %>
-        <% @imageurl.zip(@imageurlpreview).each do |x,y| %>
-      <% puts "#{x} and #{y}" %>
+      <% @imagefinal.each do |x,y| %>
           <img src="<%= y %>" alt="<%= x %>"/>
         <% end %>
-      <% else %>
-      <h1> Something bad happened </h1>
-      <% end %>
         <div class="placeholder"></div>
     </div>
 </div>

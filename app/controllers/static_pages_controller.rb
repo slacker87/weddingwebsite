@@ -18,7 +18,8 @@ class StaticPagesController < ApplicationController
   
   def photos
     @PAGE = "https://drive.google.com/folderview?id=0B68PQDtw30drdDZLSGNYd3ZlNmM"
-    @imageurl = Getimages.getimagelist(@PAGE)
-    @imageurlpreview = Getimages.getimagelistpreview(@PAGE)
+    imageurl = Getimages.getimagelist(@PAGE)
+    imageurlpreview = Getimages.getimagelistpreview(@PAGE)
+    @imagefinal = imageurl.zip(imageurlpreview)
   end
 end

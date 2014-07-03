@@ -12,13 +12,6 @@ body {
   text-align: center;
 }
 
-.vert-text h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 4.5em;
-  font-weight: 700;
-}
-
 /* Side Menu */
 
 #sidebar-wrapper {
@@ -111,7 +104,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/Nassau-Inn-Exterior-hi-lg.jpg) no-repeat center center fixed; 
+  background: url(weddingsiteheader.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

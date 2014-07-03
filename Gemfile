@@ -23,8 +23,8 @@ end
 
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
+  gem 'sqlite3'
 end
 
 group :development do

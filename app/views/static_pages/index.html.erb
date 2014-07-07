@@ -1,18 +1,4 @@
 <% provide(:title, 'Home')%>
-<!-- Side Menu 
-<a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
-<div id="sidebar-wrapper">
-  <ul class="sidebar-nav">
-    <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-    <li><a href="#top">Home</a></li>
-    <li><a href="#date">Date</a></li>
-    <li><a href="#attire">Attire</a></li>
-    <li><a href="#photos">Photos</a></li>
-    <li><a href="#venue">Venue</a></li>
-  </ul>
-</div>
-<!-- /Side Menu -->
-
 
 <!-- Full Page Image Header Area -->
 
@@ -49,6 +35,7 @@
   </div>
 </div>
 <!-- /date -->
+
 
 <!-- Attire -->
 <div id="attire" class="services fademe1">
@@ -181,19 +168,7 @@
     </footer>
     <!-- /Footer -->
 
-    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
-    <script>
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    </script>
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    </script>
+    <!-- Custom JavaScript for Smooth Scrolling -->
     <script>
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
@@ -211,15 +186,6 @@
         });
     });
     </script>
-
-<!-- script for countdown timer -->
-<script language="javascript" type="text/javascript">
-
-      $(function(){
-        $(".digits").countdown({
-        });
-      });
-</script>
 
 <!-- script for fancy fade in/out -->
 <script>
@@ -256,3 +222,5 @@
     });
   
 </script>
+
+<%= javascript_include_tag "books.js"%>

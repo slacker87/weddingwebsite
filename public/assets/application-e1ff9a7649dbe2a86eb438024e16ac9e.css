@@ -11,7 +11,6 @@
 
 
 
-
  */
 
 
@@ -30,96 +29,11 @@ body {
   text-align: center;
 }
 
-/* Side Menu */
-
-#sidebar-wrapper {
-  margin-right: -250px;
-  right: 0;
-  width: 250px;
-  background: #000;
-  position: fixed;
-  height: 100%;
-  overflow-y: auto;
-  z-index: 1000;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.sidebar-nav li {
-  line-height: 40px;
-  text-indent: 20px;
-}
-
-.sidebar-nav li a {
-  color: #999999;
-  display: block;
-  text-decoration: none;
-}
-
-.sidebar-nav li a:hover {
-  color: #fff;
-  background: rgba(255,255,255,0.2);
-  text-decoration: none;
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-  height: 55px;
-  line-height: 55px;
-  font-size: 18px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-  color: #999999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
-  background: none;
-}
-
-#menu-toggle {
-  top: 0;
-  right: 0;
-  position: fixed;
-  z-index: 1;
-}
-
-#sidebar-wrapper.active {
-  right: 250px;
-  width: 250px;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-.toggle {
-  margin: 5px 5px 0 0;
-}
-
 /* Full Page Image Header Area */
 
 .header {
   display: table;
-  height: 100%;
+  height: 90%;
   width: 100%;
   position: relative;
   background: url(weddingsiteheader.jpg) no-repeat center center fixed; 
@@ -133,6 +47,7 @@ body {
 
 .intro {
   padding: 50px 0;
+  margin-top: 30px;
 }
 
 /* Services */
@@ -315,7 +230,7 @@ i.scroll:hover {
 @media (max-width: 768px) {
 	
   .header {
-	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/Nassau-Inn-Exterior-hi-lg.jpg) no-repeat center center scroll; 
+	background: url(weddingsiteheader.jpg) no-repeat center center scroll; 
   }
 
   .callout {
@@ -330,6 +245,7 @@ i.scroll:hover {
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script);
 @import url(http://fonts.googleapis.com/css?family=League+Script);
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
 article,
 aside,
 details,
@@ -6662,41 +6578,121 @@ td.visible-print {
   content: "\f196"; }
 
 .banner-text {
-  font-family: 'League Script', cursive;
+  font-family: 'Great Vibes', cursive;
   font-weight: 700;
   font-weight: normal;
-  color: #222222;
   font-size: 56px;
   padding: 0;
   margin: 0;
   line-height: none; }
 
+.banner-text {
+  color: #fff;
+  opacity: 1;
+  text-shadow: 0px 0px 2px white, 1px 1px 4px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s linear;
+  animation: sharpen 0.9s linear backwards; }
+
+.banner-text:hover {
+  text-shadow: 0px 0px 40px #fff; }
+
+.banner-text:nth-child(1) {
+  animation-delay: 0s; }
+
+.banner-text:nth-child(2) {
+  animation-delay: 0.1s; }
+
+.banner-text:nth-child(3) {
+  animation-delay: 0.2s; }
+
+.banner-text:nth-child(4) {
+  animation-delay: 0.3s; }
+
+.banner-text:nth-child(5) {
+  animation-delay: 0.4s; }
+
+.banner-text:nth-child(6) {
+  animation-delay: 0.5s; }
+
+.banner-text:nth-child(7) {
+  animation-delay: 0.6s; }
+
+@keyframes sharpen {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 100px #fff;
+    color: transparent; }
+
+  90% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 10px #fff;
+    color: transparent; }
+
+  100% {
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0px 0px 2px white, 1px 1px 4px rgba(0, 0, 0, 0.7); } }
+
+.topbutton {
+  font-family: 'Great Vibes', cursive;
+  color: #222222;
+  font-size: 25px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 90%;
+  left: 38%;
+  display: inline-block; }
+
+.topbutton:before {
+  content: "";
+  display: block;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  height: 1px;
+  z-index: -1; }
+
+.topbutton:link, .topbutton:visited {
+  display: block;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), to(#d7d7d7));
+  background-image: -webkit-linear-gradient(top, whitesmoke, #d7d7d7);
+  background-image: -moz-linear-gradient(top, whitesmoke, #d7d7d7);
+  background-image: -ms-linear-gradient(top, whitesmoke, #d7d7d7);
+  background-image: -o-linear-gradient(top, whitesmoke, #d7d7d7);
+  width: 250px;
+  height: 144px;
+  text-align: center;
+  line-height: 144px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+  border: solid 1px transparent; }
+
+.topbutton:before {
+  content: "";
+  display: block;
+  background: #fff;
+  border-top: 2px solid #ddd;
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  bottom: -18px;
+  right: -18px;
+  z-index: -1;
+  border-radius: 50%;
+  box-shadow: inset 0px 8px 48px #ddd; }
+
+.topbutton:active {
+  box-shadow: 0px 3px 4px #aaa inset, 0px 2px 3px #fff; }
+
+.topbutton:hover {
+  text-decoration: none;
+  color: #555;
+  background: #ffffff; }
+
 .toptext {
   position: absolute;
   top: 10%;
   width: 100%; }
-
-.carousel .item {
-  min-height: 300px;
-  max-height: 300px; }
-
-.carousel .carousel-control {
-  background-image: none; }
-.wrapper {
-  display: table; }
-
-.cell {
-  display: table-cell;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  vertical-align: middle; }
-
-#holder {
-  width: 383px;
-  height: 70px;
-  margin: auto;
-  display: inline; }
-
-.cntSeparator {
-  display: none; }

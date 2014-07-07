@@ -7,17 +7,137 @@ $grayDarker: #222;
 @import "font-awesome";
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script);
 @import url(http://fonts.googleapis.com/css?family=League+Script);
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
 
+// mike & maria text
 .banner-text {
- font-family: 'League Script', cursive;
+ font-family: 'Great Vibes', cursive;
   font-weight: 700; 
   font-weight:normal;
-  color: #222222;
   font-size: 56px;
   padding: 0;
   margin: 0;
   line-height: none;
 }
+
+//animation for text
+.banner-text {
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0px 0px 2px #fff, 1px 1px 4px rgba(0,0,0,0.7);
+    transition: all 0.3s linear;
+    animation: sharpen 0.9s linear backwards;
+}
+.banner-text:hover{
+    text-shadow: 0px 0px 40px #fff;
+}
+.banner-text:nth-child(1) {
+    animation-delay: 0s;
+}
+.banner-text:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.banner-text:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.banner-text:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.banner-text:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.banner-text:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.banner-text:nth-child(7) {
+    animation-delay: 0.6s;
+}
+@keyframes sharpen {
+ 0% {
+    opacity: 0;
+    text-shadow: 0px 0px 100px #fff;
+    color: transparent;
+ }
+ 90% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 10px #fff;
+    color: transparent;
+ }
+ 100% {
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0px 0px 2px #fff, 1px 1px 4px rgba(0,0,0,0.7);
+ }
+}
+
+
+
+//join us button
+.topbutton {
+  font-family: 'Great Vibes', cursive;
+  color: #222222;
+  font-size: 25px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 90%;
+  left: 38%;
+  display: inline-block;
+}
+
+.topbutton:before {
+  content: "";
+  display: block;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  height: 1px;
+  z-index: -1;
+}
+
+.topbutton:link, .topbutton:visited {
+  display: block;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#d7d7d7));
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #d7d7d7); 
+  background-image: -moz-linear-gradient(top, #f5f5f5, #d7d7d7); 
+  background-image: -ms-linear-gradient(top, #f5f5f5, #d7d7d7); 
+  background-image: -o-linear-gradient(top, #f5f5f5, #d7d7d7); 
+  width: 250px;
+  height: 144px;
+  text-align: center;
+  line-height: 144px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+  border: solid 1px transparent;
+}
+
+.topbutton:before {
+  content: "";
+  display: block;
+  background: #fff;
+  border-top: 2px solid #ddd;
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  bottom: -18px;
+  right: -18px;
+  z-index: -1;
+  border-radius: 50%;
+  box-shadow: inset 0px 8px 48px #ddd;
+}
+
+.topbutton:active {
+  box-shadow: 0px 3px 4px #aaa inset, 0px 2px 3px #fff;
+}
+
+.topbutton:hover {
+  text-decoration: none;
+  color: #555;
+  background: #ffffff;
+}
+
 
 .toptext {
   position:absolute;
@@ -25,12 +145,3 @@ $grayDarker: #222;
   width: 100%;
 }
 
-
-.carousel .item {
-  min-height: 300px;
-  max-height: 300px;
-}
-
-.carousel .carousel-control {
-  background-image: none;
-}

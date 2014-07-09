@@ -141,7 +141,11 @@ $grayDarker: #222;
 
 .toptext {
   position:absolute;
-  top:10%;
+  top:100px;
   width: 100%;
 }
 
+.venue {
+  margin-left: -120px;
+  margin-right: -120px;
+}

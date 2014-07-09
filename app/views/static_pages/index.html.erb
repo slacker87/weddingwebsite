@@ -1,50 +1,69 @@
 <% provide(:title, 'Home')%>
 
-<!-- Full Page Image Header Area -->
-
-<div id="top" class="header" align="center">
-  <div class="vert-text">
-    <div class="toptext banner-text">
-  <div style="float: left;margin-left: 15%;">
-      <p>Mike
-      <br/>&
-      <br/>Maria</p>
+<!-- fancy transition pages -->
+<!-- Header with Navigation -->
+<div class="row" id="header">
+    <div class="col-12">            
+        <div class="navbar" id="navigation">
+          <ul class="nav navbar-nav">
+        <li><a id="link-home" href="#home">Home</a></li>
+        <li><a id="link-venue" href="#venue">Venue</a></li>
+        <li><a id="link-map" href="#map">Map</a></li>
+        <li><a id="link-mens-attire" href="#mens-attire">Mens attire</a></li>
+        <li><a id="link-womens-attire" href="#womens-attire">Womens attire</a></li>
+        <li><a id="link-photos" href="#photos">Photos</a></li>
+          </ul>
+      </div>
     </div>
-    <div style="float: right;margin-right: 15%;">
-      <p>Oct.
-      <br/>11
-      <br/>2014</p>
-    </div>
-  </div>
-
-    <a href="#date" class="topbutton text-center" style="" align="center">Join us</a>
-  </div>
 </div>
 
+<!-- Home -->
+<div id="home" class="content">
+</div>
+<!-- /Home -->
+ 
 
-<!-- date -->
-<div id="date" class="intro fademe">
-  <div class="container">
+<!-- venue -->
+<div id="venue" class="panel">
+  <div class="content venue">
     <div class="row">
-      <div class=" text-center">
-        <h2>The marriage of Michael Rickert and Maria Swift</h2>
-        <p class="lead text-center">Will take place at the Nassau Inn in Princeton
-         <br/> on October 11th, 2014 at 4:30pm</p>
+      <div class="col-md-10 col-md-offset-1 text-center">
+        <row>
+        <h2 class="col-xs-12" style="margin-top: -30px;">Venue</h2>
+          <p class="col-xs-3" style="background-color: transparent;">The wedding ceremony and reception will take place at the Nassau Inn in Princeton, NJ
+          <br/><br/><br/>
+          10 Palmer Square, Princeton, NJ 08542
+            <br/><br/>
+(609) 921-7500
+          </p>
+          <%= image_tag "nassau.jpg", class: "col-xs-8" %>
+        </row>
       </div>
     </div>
   </div>
 </div>
-<!-- /date -->
+<!-- /Venue -->
+ 
+    <!-- Map -->
+<div id="map" class="panel">
+    <div class="map content">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?ie=UTF8&amp;q=nassau+inn+princeton&amp;fb=1&amp;gl=us&amp;hq=nassau+inn&amp;cid=0,0,16635396667706573177&amp;ll=40.350396,-74.661281&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed">
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?ie=UTF8&amp;q=nassau+inn+princeton&amp;fb=1&amp;gl=us&amp;hq=nassau+inn&amp;cid=0,0,16635396667706573177&amp;ll=40.350396,-74.661281&amp;spn=0.006295,0.006295&amp;t=m&amp;source=embed"></a>
+        </small>
+        </iframe>
+    </div>
+</div>
+    <!-- /Map -->
 
 
 <!-- Attire -->
-<div id="attire" class="services fademe1">
-  <h1 align="center">Attire</h1>
-  <h3 align="center">White tie optional, black tie required</h3>
-  <div class="container">
+<div id="mens-attire" class="panel services">
+    <div class="content">
     <div class="row">
-      <div class="col-md-4 col-md-offset-4 text-center">
-        <h2>For men</h2>
+      <div class="col-md-10 col-md-offset-1 text-center">
+        <h2>Mens attire</h2>
         <hr>
       </div>
     </div>
@@ -74,10 +93,14 @@
         </div>
       </div>
     </div>
-    <br>
+      </div>
+  </div>
+  
+<div id="womens-attire" class="panel services">
+    <div class="content">
     <div class="row">
-        <div class="col-md-4 col-md-offset-4 text-center">
-          <h2>For women</h2>
+        <div class="col-md-10 col-md-offset-1 text-center">
+          <h2>Womens attire</h2>
           <hr>
         </div>
       </div>
@@ -108,43 +131,58 @@
       </div>
     </div>
   </div>
+  
 </div>
 <!-- /attire -->
 
 
 <!-- Photos -->
-<div id="photos" class="callout fademe">
-        <div class="vert-text">
-        <h1>Wedding Photos</h1>
+<div id="photos" class="panel">
+        <div class="content vert-text">
+        <h2>Photos</h2>
           <br>
-          <%= link_to "Found here", photos_path, class: 'btn btn-lg btn-primary' %>
+          <%= link_to "Can be found here", photos_path, class: 'btn btn-lg btn-primary' %>
   </div>
 </div>
 <!-- /photos -->
+<!-- /Attire -->
+<!-- /transition pages -->
+
+<!-- Full Page Image Header Area -->
+
+<div id="top" class="header" align="center">
+  <div class="vert-text">
+    <div class="toptext banner-text">
+  <div style="float: left;margin-left: 15%;">
+      <p>Mike
+      <br/>&
+      <br/>Maria</p>
+    </div>
+    <div style="float: right;margin-right: 15%;">
+      <p>Oct.
+      <br/>11
+      <br/>2014</p>
+    </div>
+  </div>
+
+    <a href="#date" class="topbutton text-center" style="" align="center">Join us</a>
+  </div>
+</div>
 
 
-
-<!-- venue -->
-<div id="venue" class="call-to-action fademe">
+<!-- date -->
+<div id="date" class="intro">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <h2>Wedding location</h2>
-          <p class="lead">The wedding ceremony and reception will take place at the Nassau Inn in Princeton, NJ</p>
+      <div class=" text-center">
+        <h2>The marriage of Michael Rickert and Maria Swift</h2>
+        <p class="lead text-center">Will take place at the Nassau Inn in Princeton
+         <br/> on October 11th, 2014 at 4:30pm</p>
       </div>
     </div>
   </div>
 </div>
-    <!-- Map -->
-    <div class="map fademe">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?ie=UTF8&amp;q=nassau+inn+princeton&amp;fb=1&amp;gl=us&amp;hq=nassau+inn&amp;cid=0,0,16635396667706573177&amp;ll=40.350396,-74.661281&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed">
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?ie=UTF8&amp;q=nassau+inn+princeton&amp;fb=1&amp;gl=us&amp;hq=nassau+inn&amp;cid=0,0,16635396667706573177&amp;ll=40.350396,-74.661281&amp;spn=0.006295,0.006295&amp;t=m&amp;source=embed"></a>
-        </small>
-        </iframe>
-    </div>
-    <!-- /Map -->
+<!-- /date -->
 
     <!-- Footer -->
     <footer>
@@ -171,7 +209,7 @@
     <!-- Custom JavaScript for Smooth Scrolling -->
     <script>
     $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
+        $('a[href*=#date]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
                 var target = $(this.hash);
@@ -186,41 +224,3 @@
         });
     });
     </script>
-
-<!-- script for fancy fade in/out -->
-<script>
-   $(window).scroll(function () {
-
-        /* Check the location of each desired element */
-        $('.fademe').each(function (i) {
-
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            /* If the object is completely visible in the window, fade it it */
-            if (bottom_of_window > bottom_of_object) {
-
-                $(this).animate({
-                    'opacity': '1'
-                }, 700);
-            }
-        });
-        /* Check the location of each desired element */
-        $('.fademe1').each(function (i) {
-
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            /* If the object is completely visible in the window, fade it it */
-            if (bottom_of_window > bottom_of_object * .5) {
-
-                $(this).animate({
-                    'opacity': '1'
-                }, 700);
-            }
-        });
-    });
-  
-</script>
-
-<%= javascript_include_tag "books.js"%>

@@ -154,11 +154,13 @@ html, body, .container, .header {
 .intro-effect-sidefixed:not(.notrans) .title p {
 	-webkit-transition-property: opacity;
 	transition-property: opacity;
+  z-index: 1;
 }
 
 .intro-effect-sidefixed:not(.notrans) .content > div {
 	-webkit-transition-property: -webkit-transform, opacity;
 	transition-property: transform, opacity;
+  z-index: 1;
 }
 
 .intro-effect-sidefixed:not(.notrans) .bg-img::before,
@@ -169,6 +171,7 @@ html, body, .container, .header {
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	-webkit-transition-duration: 0.5s;
 	transition-duration: 0.5s;
+  z-index: 1;
 }
 
 .intro-effect-sidefixed .header {
@@ -221,6 +224,7 @@ html, body, .container, .header {
 	text-align: right;
 	-webkit-transform: translateY(-400px);
 	transform: translateY(-400px);
+  z-index: 1;
 }
 
 .intro-effect-sidefixed.modify .title {
@@ -235,14 +239,17 @@ html, body, .container, .header {
 }
 
 .intro-effect-sidefixed .title h1 {
+  z-index: 1;
 }
 
 .intro-effect-sidefixed .title p {
 	opacity: 0;
+  z-index: 1;
 }
 
 .intro-effect-sidefixed.modify .title p {
 	opacity: 1;
+  z-index: 1;
 }
 
 .intro-effect-sidefixed .content {

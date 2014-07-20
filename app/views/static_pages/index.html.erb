@@ -4,7 +4,7 @@
 <!-- Header with Navigation -->
 <div class="row" id="header">
     <div class="col-12">            
-        <div class="navbar" id="navigation">
+        <div id="navigation">
           <ul class="nav navbar-nav">
         <li><a id="link-home" href="#home">Home</a></li>
         <li><a id="link-venue" href="#venue">Venue</a></li>
@@ -19,17 +19,18 @@
 
 <!-- Home -->
 <div id="home" class="content">
+  
 </div>
 <!-- /Home -->
  
 
 <!-- venue -->
 <div id="venue" class="panel">
-  <div class="content venue">
+  <div class="content">
     <div class="row">
       <div class="col-md-10 col-md-offset-1 text-center">
         <row>
-        <h2 class="col-xs-12" style="margin-top: -30px;">Venue</h2>
+        <h2 class="col-xs-12" style="margin-top: -60px;">Venue</h2>
           <p class="col-xs-3" style="background-color: transparent;">The wedding ceremony and reception will take place at the Nassau Inn in Princeton, NJ
           <br/><br/><br/>
           10 Palmer Square, Princeton, NJ 08542
@@ -149,7 +150,6 @@
 <!-- /transition pages -->
 
 <!-- Full Page Image Header Area -->
-<div id="container" class="intro-effect-sidefixed">
 <div id="top" class="header" align="center">
   <div class="vert-text bg-img">
     <div class="toptext banner-text">
@@ -165,133 +165,28 @@
     </div>
   </div>
 </div>
-
-    <a href="#" class="topbutton trigger text-center" style="" align="center" id="trigger">Join us</a>
 </div>
 
-<!-- date -->
-      <div class="title">
-        <h2>The marriage of Michael Rickert and Maria Swift</h2>
-        <p class="lead">Will take place at the Nassau Inn in Princeton
-         <br/> on October 11th, 2014 at 4:30pm</p>
-      </div>
-</div>
-<!-- /date -->
 
+  <!-- responsive site -->
+  
+  <div class="responsive">
+    <div class="responsiveheader vert-text banner-text toptextresponsive">
+      <p>Mike
+      <br/>&
+      <br/>Maria</p>
+    </div>
+    <div class="responsivedate">
+      <h1> The marrage of Michael Rickert and Maria Swift will take place at the Nassau Inn on October 11th, 2014 at 4:30pm.
+      </h1>
+    </div>
+    <div class="responsivevenue">
 
+      <%= image_tag "nassau.jpg", style: "width: 124%;margin-left: -12%;"%>
+    </div>
+    <div class="responsiveattire">
+      
+    </div>
+  </div>
+  
 <!-- HERE BE JAVASCRIPTS -->
-
-    <!-- Custom JavaScript for Smooth Scrolling -->
-    <script>
-    $(function() {
-        $('a[href*=#date]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
-
-<!-- Testing fancy image slide push -->
-<script>
-			(function() {
-
-				// detect if IE : from http://stackoverflow.com/a/16657946		
-				var ie = (function(){
-					var undef,rv = -1; // Return value assumes failure.
-					var ua = window.navigator.userAgent;
-					var msie = ua.indexOf('MSIE ');
-					var trident = ua.indexOf('Trident/');
-
-					if (msie > 0) {
-						// IE 10 or older => return version number
-						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
-					} else if (trident > 0) {
-						// IE 11 (or newer) => return version number
-						var rvNum = ua.indexOf('rv:');
-						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
-					}
-
-					return ((rv > -1) ? rv : undef);
-				}());
-
-
-				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179					
-				// left: 37, up: 38, right: 39, down: 40,
-				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-
-
-
-				var docElem = window.document.documentElement,
-					scrollVal,
-					isRevealed, 
-					noscroll, 
-					isAnimating,
-					container = document.getElementById( 'container' ),
-					trigger = container.querySelector( 'a.trigger' );
-
-				function scrollY() {
-					return window.pageYOffset || docElem.scrollTop;
-				}
-				
-				function scrollPage() {
-					scrollVal = scrollY();
-					
-					if( noscroll && !ie ) {
-						if( scrollVal < 0 ) return false;
-						// keep it that way
-						window.scrollTo( 0, 0 );
-					}
-
-					if( classie.has( container, 'notrans' ) ) {
-						classie.remove( container, 'notrans' );
-						return false;
-					}
-
-					if( isAnimating ) {
-						return false;
-					}
-					
-					if( scrollVal <= 0 && isRevealed ) {
-						toggle(0);
-					}
-					else if( scrollVal > 0 && !isRevealed ){
-						toggle(1);
-					}
-				}
-
-				function toggle( reveal ) {
-					isAnimating = true;
-					
-					if( reveal ) {
-						classie.add( container, 'modify' );
-					}
-					else {
-						noscroll = true;
-						classie.remove( container, 'modify' );
-					}
-
-					// simulating the end of the transition:
-					setTimeout( function() {
-						isRevealed = !isRevealed;
-						isAnimating = false;
-						if( reveal ) {
-							noscroll = false;
-							enable_scroll();
-						}
-					}, 600 );
-				}
-
-				// refreshing the page...
-				var triggerbutton = document.getElementById("trigger");
-				triggerbutton.addEventListener( 'click', function() { toggle( 'reveal' ); } );
-			})();
-		</script>

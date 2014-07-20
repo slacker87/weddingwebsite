@@ -68,13 +68,13 @@
 	-webkit-box-shadow: 4px 6px 9px 0px rgba(50, 50, 50, 0.81);
 -moz-box-shadow:    4px 6px 9px 0px rgba(50, 50, 50, 0.81);
 box-shadow:         4px 6px 9px 0px rgba(50, 50, 50, 0.81);
-	margin-left: -102%;
+	margin-left: -122%;
 	z-index:2;
-	-webkit-transition: all .7s ease-in-out;
-	-moz-transition: all .7s ease-in-out;
-	-o-transition: all .7s ease-in-out;
-	-ms-transition: all .7s ease-in-out;
-	transition: all .7s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
 }
 .panel:target{
 	margin-left: 0%;

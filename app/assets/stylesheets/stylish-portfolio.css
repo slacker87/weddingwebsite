@@ -1,9 +1,5 @@
 /* Global Styles */
 
-html,
-body {
-  width: 100%;
-}
 
 .vert-text {
   display: table-cell;
@@ -200,25 +196,4 @@ i.scroll {
 
 i.scroll:hover {
   color: #0a5175;
-}
-/* Responsive */
-
-@media (max-width: 768px) {
-	
-  .header {
-	background: url(weddingsiteheader.jpg) no-repeat center center scroll;
-  }
-  
-  .navbar {
-  display: none;
-  }
-
-  .callout {
-	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/princetonu.jpg) no-repeat center center scroll; 
-  }
-
-  .map {
-	height: 75%;
-  }
-
 }

@@ -53,76 +53,150 @@ i.service-icon {
 }
 
 .circular-tux {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/tux.jpg) no-repeat;
+	width: 100px;
+	height: 100px;
+  margin-left: 15px;
+  margin-top: 15px;
+	border-radius: 1000px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/tux.jpg)  no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
 
 .circular-mshoes {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
+  margin-top: 15px;
+  margin-left: 15px;
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/0702610d-0e6d-4523-9d5d-9cec77658b7b.jpg) no-repeat;
+	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/0702610d-0e6d-4523-9d5d-9cec77658b7b.jpg)  no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
 
 .circular-bowtie {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
+  margin-top: 15px;
+  margin-left: 15px;
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/a82386ca-fe51-44b3-9158-4a157a917c91.jpg) no-repeat;
+	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/a82386ca-fe51-44b3-9158-4a157a917c91.jpg)  no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
 
 .circular-mextras {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/c299e0f9-053e-4bce-89f8-13e31abc6e6b.jpg) no-repeat;
+	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/c299e0f9-053e-4bce-89f8-13e31abc6e6b.jpg)  no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
 
 .circular-gown {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
+  margin-top: 15px;
+  margin-right: 15px;
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/0c873c14-99ab-4902-9a45-7150651604e4.jpg) no-repeat;
+	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/0c873c14-99ab-4902-9a45-7150651604e4.jpg)  no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
 
 .circular-makeup {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
+  margin-top: 15px;
+  margin-right: 15px;
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/725ed44c-d84c-4436-8ad7-25c7408df276.jpg) no-repeat;
+	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/725ed44c-d84c-4436-8ad7-25c7408df276.jpg)  no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
 
 
 .circular-jewelry {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
+  margin-top: 15px;
+  margin-right: 15px;
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/92fadc58-eac0-445f-b5c1-37b04e58130e.jpg) no-repeat;
+	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/92fadc58-eac0-445f-b5c1-37b04e58130e.jpg)  no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
 
 .circular-accessories {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/fd56272d-1381-4850-ac7e-ac875bd69e51.jpg) no-repeat;
+	background: url(http://i283.photobucket.com/albums/kk319/racethesunlive/fd56272d-1381-4850-ac7e-ac875bd69e51.jpg)  no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
 
 
@@ -171,7 +245,7 @@ i.service-icon {
 
 .map {
   height: 500px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 /* Footer */

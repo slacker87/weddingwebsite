@@ -2,9 +2,9 @@
 
 <!-- fancy transition pages -->
 <!-- Header with Navigation -->
-<header>
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
+<header id="header">
+  <nav id="navigation" class="navbar navbar-default" role="navigation">
+    <div id="fluid" class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -17,17 +17,13 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <div class=" col-sm-offset-2 col-sm-10" align="center">
-      <ul class="nav navbar-nav">
-        <li><a id="link-home" href="#home">Home</a></li>
-        <li><a id="link-weddingparty" href="#weddingparty">Wedding Party</a></li>
-        <li><a id="link-venue" href="#venue">Venue</a></li>
-        <li><a id="link-map" href="#map">Map</a></li>
-        <li><a id="link-mens-attire" href="#mens-attire">Mens attire</a></li>
-        <li><a id="link-womens-attire" href="#womens-attire">Womens attire</a></li>
-        <li><a id="link-photos" href="#photos">Photos</a></li>
+      <ul id="navlist" class="nav nav-pills nav-justified" align="center">
+        <li id="link-home"><a href="#home">Home</a></li>
+        <li id="link-weddingparty"><a href="#weddingparty">Wedding Party</a></li>
+        <li id="link-venue"><a href="#venue">Venue</a></li>
+        <li id="link-attire"><a href="#attire">Attire</a></li>
+        <li><%= link_to "Photos", photos_path %></li>
       </ul>
-      </div>
       </div>
     </div>
   </nav>
@@ -43,12 +39,43 @@
 <div id="weddingparty" class="panel">
   <div class="content">
     <div class="row">
-      <div class="col-md-10 col-md-offset-1 text-center">
-        <row>
-        <h2 class="col-xs-12" style="margin-top: -60px;">Meet The Wedding party</h2>
-          <p class="col-xs-3" style="background-color: transparent;"></p>
-          <%= image_tag "nassau.jpg", class: "col-xs-8" %>
-        </row>
+      <div class="col-xs-6" style="border-right: 2px solid #999;">
+        <div class="media">
+          <span class="circularmaria pull-right"></span>
+        <div class="media-body">
+          <h3 class="media-heading">The Bride</h3>
+          With a passion for fine arts and finer food, Maria has spent her twenty six years cultivating her pallete and cooking talents. A self-proclaimed "foodie", Maria pushes her cullinary skills at every opportunity for friends and family. When not in the kitchen cooking up delecate cuisine Maria finds herself spending as much time as possible with her family, friends, and fiance. Maria loves being around others and always enjoys their company. You'll notice Maria's passions shine through on the wedding day as the venue and menu were carefully planned to reflect her style.
+        </div>
+      </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="media">
+          <span class="circularmike pull-left"></span>
+        <div class="media-body">
+          <h3 class="media-heading">The Groom</h3>
+          A love of the outdoors, technology, and home improvement best describes Michael. Bouncing between the three seemingly unrelated activities, he still searches for time to spend with his close friends, family, and fiancee. When Mike isn't busy trying to program or hack together some new tech project, he's spending time working on the couples newly owned house, transforming it into their ideal dream home. Lately Michael has found a passion for camping and the outdoors and, if time and his fiancee allow, will spend the weekend biking and camping around New Jersey. 
+        </div>
+      </div>
+      </div>
+    </div>
+        <div class="row" style="padding-top: 45px;">
+      <div class="col-xs-6" style="border-right: 2px solid #999;">
+        <div class="media">
+          <span class="circularlisa pull-left"></span>
+        <div class="media-body">
+          <h3 class="media-heading">Maid of Honor</h3>
+          Passing by the NYU labs late at night you may catch a glipse of Lisa hard at work. Don't think for a moment though that she wouldn't gladly invite you to join her as Lisa always makes time for friends and family, putting them in the highest of regards. When not spending time with her husband or researching her way tward graduation, Lisa enjoys fine dining at local resturaunts and you'll be sure her best friends will all be there.
+        </div>
+      </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="media">
+          <span class="circularasa pull-right"></span>
+        <div class="media-body">
+          <h3 class="media-heading">Best Man</h3>
+          Best described as a wilderness astrophysicist, Asa enjoys all things science and exploring nature and its limits. When he's not catching a view of the night sky and its latest stars and planets Asa can be found biking every which way and studying for that next big college physics final. While not the social butterfly, Asa keeps his friends close and is always ready to give a helping hand at the drop of a bike wrench.
+        </div>
+      </div>
       </div>
     </div>
   </div>
@@ -59,26 +86,24 @@
 <div id="venue" class="panel">
   <div class="content">
     <div class="row">
-      <div class="col-md-10 col-md-offset-1 text-center">
-        <row>
-        <h2 class="col-xs-12" style="margin-top: -60px;">Venue</h2>
-          <p class="col-xs-3" style="background-color: transparent;">The wedding ceremony and reception will take place at the Nassau Inn in Princeton, NJ
-          <br/><br/><br/>
+      <div class="col-xs-6">
+              <div class="media" align="center">
+          <div class="circularinn"></div>
+                <br/>
+        <div class="media-body">
+          <h3 class="media-heading">Wedding Venue</h3>
+          The wedding ceremony and reception will take place at the Nassau Inn in Princeton, NJ
+          <br/>
           10 Palmer Square, Princeton, NJ 08542
+            <br/>
+          (609) 921-7500
             <br/><br/>
-(609) 921-7500
-          </p>
-          <%= image_tag "nassau.jpg", class: "col-xs-8" %>
-        </row>
+          Accomodations at the Nassau Inn are available and we have a room block booked if you would like to join us. Be sure to let the Bride or Groom know ASAP if you plan to do so.
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-<!-- /Venue -->
- 
-    <!-- Map -->
-<div id="map" class="panel">
-    <div class="map content">
+      </div>
+      <div class="col-xs-6">
+            <div class="map">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?ie=UTF8&amp;q=nassau+inn+princeton&amp;fb=1&amp;gl=us&amp;hq=nassau+inn&amp;cid=0,0,16635396667706573177&amp;ll=40.350396,-74.661281&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed">
         <br />
         <small>
@@ -86,98 +111,50 @@
         </small>
         </iframe>
     </div>
+    </div>
+    </div>
+  </div>
 </div>
-    <!-- /Map -->
+<!-- /Venue -->
 
 
 <!-- Attire -->
-<div id="mens-attire" class="panel services">
+<div id="attire" class="panel services">
     <div class="content">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1 text-center">
-        <h2>Mens attire</h2>
-        <hr>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2 col-md-offset-2 text-center">
-        <div class="service-item">
-          <i class="service-icon circular-tux"></i>
-          <h4>Tuxedo</h4>
+          <div class="row">
+      <div class="col-xs-6">
+              <div class="media" align="center">
+                <div class="pull-left">
+          <div class="circular-tux"></div>
+          <div class="circular-mshoes"></div>
+          <div class="circular-bowtie"></div>
+          <div class="circular-mextras"></div>
+                </div>
+        <div class="media-body" style="border-right: 2px solid #999;">
+          <h3 class="media-heading">Men's Attire</h3>
+            Men are expected to wear a tuxedo, preferrably a white tie tuxedo. The bridal party will be getting their tuxedo's from <a href="http://www.princetontuxedo.com/">Princeton Tuxedo</a> and have a group discount. If you are interested in joining the group please let someone from the wedding party know. Top hats and bowties are also not required wear but preferred! Any questions about mens attire, or if you aren't sure what to wear, please reach out to the bride or her maid of honor and ask.
         </div>
       </div>
-      <div class="col-md-2 text-center">
-        <div class="service-item">
-          <i class="service-icon circular-mshoes"></i>
-          <h4>Shoes</h4>
+      </div>
+      <div class="col-xs-6">
+        <div class="media" align="center">
+                <div class="pull-right">
+          <div class="circular-gown"></div>
+          <div class="circular-makeup"></div>
+          <div class="circular-jewelry"></div>
+          <div class="circular-accessories"></div>
+                </div>
+        <div class="media-body">
+          <h3 class="media-heading">Women's Attire</h3>
+          For women the expected attire is a ball gown in the white tie style. White tie style being a non-bright color and at least below the knee. Women are also encouraged to wear makeup and dramatic jewelry to enhance the white tie affair atmosphere. As always, any questions about womens attire can be directed to the bride or maid of honor. If your not sure, ask!
         </div>
       </div>
-      <div class="col-md-2 text-center">
-        <div class="service-item">
-          <i class="service-icon circular-bowtie"></i>
-          <h4>Bowtie</h4>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="service-item">
-          <i class="service-icon circular-mextras"></i>
-            <h4>Other proper attire</h4>
-        </div>
-      </div>
-    </div>
-      </div>
-  </div>
-  
-<div id="womens-attire" class="panel services">
-    <div class="content">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1 text-center">
-          <h2>Womens attire</h2>
-          <hr>
-        </div>
-      </div>
-    <div class="row">
-      <div class="col-md-2 col-md-offset-2 text-center">
-        <div class="service-item">
-          <i class="service-icon circular-gown"></i>
-          <h4>Formal full-length ball gown</h4>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="service-item">
-          <i class="service-icon circular-makeup"></i>
-          <h4>Glamorous make-up</h4>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="service-item">
-          <i class="service-icon circular-jewelry"></i>
-          <h4>Dramatic jewelry</h4>
-        </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="service-item">
-          <i class="service-icon circular-accessories"></i>
-            <h4>Other proper accessories</h4>
-        </div>
       </div>
     </div>
   </div>
-  
 </div>
 <!-- /attire -->
 
-
-<!-- Photos -->
-<div id="photos" class="panel">
-        <div class="content vert-text">
-        <h2>Photos</h2>
-          <br>
-          <%= link_to "Can be found here", photos_path, class: 'btn btn-lg btn-primary' %>
-  </div>
-</div>
-<!-- /photos -->
-<!-- /Attire -->
 <!-- /transition pages -->
 
 <!-- Full Page Image Header Area -->

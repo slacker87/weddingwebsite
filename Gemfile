@@ -9,9 +9,11 @@ gem 'coffee-rails', '~> 4.0.0' # Use CoffeeScript for .js.coffee assets and view
 gem 'jquery-rails' # Use jquery as the JavaScript library
 gem 'turbolinks' # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'jbuilder', '~> 1.2' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jquery-turbolinks'
 
 # Non-default gems
-gem 'bootstrap-sass', '~> 3.0.2.0' # Twitter Bootstrap front-end frameworks
+# Use Bootstrap for styling
+gem 'bootstrap-sass', '~> 3.2.0'
 gem 'local_time' # Manage time
 gem 'nokogiri', '1.5.9'
 gem "font-awesome-rails"
@@ -21,13 +23,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+  gem 'sqlite3'
 
 group :production do
   gem 'rails_12factor'
-  gem 'sqlite3'
 end
 
 group :development do
-  gem 'sqlite3'
 end
 

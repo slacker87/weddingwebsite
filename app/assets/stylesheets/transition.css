@@ -60,10 +60,11 @@
 }
 .panel{
 	width: 99%;
-	height: 95%;
-  top: 10px;
+	height: 99%;
+  top: 0px;
 	position: fixed;
-  background-color: #222; 
+  background-color: #222;
+  border-radius: 0px;
   background-image: url('xv.png');
 	-webkit-box-shadow: 4px 6px 9px 0px rgba(50, 50, 50, 0.81);
 -moz-box-shadow:    4px 6px 9px 0px rgba(50, 50, 50, 0.81);

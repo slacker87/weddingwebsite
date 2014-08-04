@@ -2,27 +2,58 @@
 
 <!-- fancy transition pages -->
 <!-- Header with Navigation -->
-<div class="row" id="header">
-    <div class="col-12">            
-        <div id="navigation">
-          <ul class="nav navbar-nav">
+<header>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class=" col-sm-offset-2 col-sm-10" align="center">
+      <ul class="nav navbar-nav">
         <li><a id="link-home" href="#home">Home</a></li>
+        <li><a id="link-weddingparty" href="#weddingparty">Wedding Party</a></li>
         <li><a id="link-venue" href="#venue">Venue</a></li>
         <li><a id="link-map" href="#map">Map</a></li>
         <li><a id="link-mens-attire" href="#mens-attire">Mens attire</a></li>
         <li><a id="link-womens-attire" href="#womens-attire">Womens attire</a></li>
         <li><a id="link-photos" href="#photos">Photos</a></li>
-          </ul>
+      </ul>
+      </div>
       </div>
     </div>
-</div>
+  </nav>
+</header>
 
 <!-- Home -->
 <div id="home" class="content">
   
 </div>
 <!-- /Home -->
- 
+
+<!-- wedding party -->
+<div id="weddingparty" class="panel">
+  <div class="content">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 text-center">
+        <row>
+        <h2 class="col-xs-12" style="margin-top: -60px;">Meet The Wedding party</h2>
+          <p class="col-xs-3" style="background-color: transparent;"></p>
+          <%= image_tag "nassau.jpg", class: "col-xs-8" %>
+        </row>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /wedding party -->
 
 <!-- venue -->
 <div id="venue" class="panel">

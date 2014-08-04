@@ -18,6 +18,16 @@ body {
   background-size: cover;
 }
 
+.navbar-default {
+  background: transparent;
+  border: none;
+  z-index: 9999;
+}
+
+.navbar-toggle {
+  z-index: 9999;
+}
+
 
 // mike & maria text
 .banner-text {

@@ -49,10 +49,12 @@ box-shadow:         4px 6px 9px 0px rgba(50, 50, 50, 0.81);
   background-color: #222; 
   background-image: url('xv.png');
 }
-#home:target ~ #header #navigation #fluid #bs-example-navbar-collapse-1 #navlist #link-home,
-#weddingparty:target ~ #header #navigation #fluid #bs-example-navbar-collapse-1 #navlist #link-weddingparty,
-#venue:target ~ #header #navigation #fluid #bs-example-navbar-collapse-1 #navlist #link-venue,
-#attire:target ~ #header #navigation #fluid #bs-example-navbar-collapse-1 #navlist #link-attire
+.nav li {
+  color: #002B8F;
+  background: none repeat scroll 0% 0% transparent;
+}
+
+#home:target ~ #homelink
 {
 color: #FFF;
 background-color: #428BCA;

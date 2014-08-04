@@ -18,11 +18,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul id="navlist" class="nav nav-pills nav-justified" align="center">
-        <li id="link-home"><a href="#home">Home</a></li>
+        <li id="homelink"><a href="#home">Home</a></li>
         <li id="link-weddingparty"><a href="#weddingparty">Wedding Party</a></li>
         <li id="link-venue"><a href="#venue">Venue</a></li>
         <li id="link-attire"><a href="#attire">Attire</a></li>
-        <li><%= link_to "Photos", photos_path %></li>
+        <li id="link-photos"><%= link_to "Photos", photos_path %></li>
       </ul>
       </div>
     </div>
@@ -198,3 +198,31 @@
   </div>
   
 <!-- HERE BE JAVASCRIPTS -->
+<script>
+  $(function(){
+  $("#homelink").click(function(){
+     $(this).toggleClass("active");
+    $("#link-weddingparty").removeClass("active");
+    $("#link-venue").removeClass("active");
+    $("#link-attire").removeClass("active");
+  });
+  $("#link-weddingparty").click(function(){
+     $(this).toggleClass("active");
+    $("#homelink").removeClass("active");
+    $("#link-venue").removeClass("active");
+    $("#link-attire").removeClass("active");
+  });
+  $("#link-venue").click(function(){
+     $(this).toggleClass("active");
+    $("#link-weddingparty").removeClass("active");
+    $("#homelink").removeClass("active");
+    $("#link-attire").removeClass("active");
+  });
+  $("#link-attire").click(function(){
+     $(this).toggleClass("active");
+    $("#link-weddingparty").removeClass("active");
+    $("#link-venue").removeClass("active");
+    $("#homelink").removeClass("active");
+  });
+});
+</script>
